@@ -1,8 +1,45 @@
-#root {
-  max-width: 1280px;
+/* Utilities START*/
+.container-lg {
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
   border: 1px solid white;
 }
 
+/* Utilities END */
+
+
+#root {
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  border: 1px solid yellow;
+}
+
+.bg-image{
+  height: 100%;
+  
+  background-image: url("https://wallpaperaccess.com/full/3203467.jpg");
+  background-size: cover;
+}

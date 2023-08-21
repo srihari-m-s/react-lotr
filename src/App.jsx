@@ -6,7 +6,17 @@ function App() {
 
   return (
     <>
-      <div className="">Hello</div>
+      <header>
+        <div className="container-lg">
+          This is the header
+        </div>
+      </header>
+
+      <main className='bg-image'>
+        <div className='container-lg'>
+          
+        </div>
+      </main>
     </>
   )
 }
