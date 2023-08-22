@@ -1,11 +1,17 @@
 /* Utilities START*/
-.container-lg {
+.container {
   max-width: 1440px;
+  width: 900px;
   margin: 0 auto;
 
   border: 1px solid white;
 }
 
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
 /* Utilities END */
 
 
@@ -18,15 +24,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 1rem;
-  border: 1px solid red;
 }
 
 main {
@@ -42,4 +39,41 @@ main {
   
   background-image: url("https://wallpaperaccess.com/full/3203467.jpg");
   background-size: cover;
+}
+
+.welcome {
+  width: 80%;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.selection {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.selector {
+  font-size: 1.5rem;
+  width: 15ch;
+  padding: 0.5em 0.75em;
+  border-radius: 10px;
+}
+
+.selector:hover,
+.selector:focus {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.selector:active {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5) inset;
 }
