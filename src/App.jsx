@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Selection from './components/Selection'
 
 function App() {
   
@@ -13,11 +14,7 @@ function App() {
             <h1>welcome to lotr info</h1>
           </div>
           
-          <div className="selection">
-            <button className="selector">Books</button>
-            <button className="selector">Movies</button>
-            <button className="selector">Characters</button>
-          </div>
+          <Selection />
 
         </div>
       </main>
