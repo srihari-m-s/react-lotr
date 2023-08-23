@@ -29,7 +29,7 @@ export default function Display() {
             })
             .then(response => response.json())
             .then(data => data)},
-        staleTime: 5000,
+        staleTime: 1000 * 60,
     })
 
     const displayComponent = {
@@ -44,7 +44,7 @@ export default function Display() {
 
     if(isLoading) {
         return (
-            <h2 className='loading'>Loading... Please wait.</h2>
+            <h3 className='loading'>Loading... Please wait.</h3>
         )
     }
 

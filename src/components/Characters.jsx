@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Characters() {
+export default function Characters({data}) {
   return (
-    <div>Characters</div>
+    <div className='display-card'>
+        Characters
+    </div>
   )
 }

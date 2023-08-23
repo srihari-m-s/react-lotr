@@ -1,0 +1,35 @@
+.loading {
+    text-align: center;
+    color: white;
+}
+
+.display {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    overflow: auto;
+}
+
+.display-card{
+    /* border: 1px solid yellow; */
+    width: 90%;
+    padding-inline: 1em;
+
+    background-color: rgba(225, 173, 109, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.movieInfo{
+    font-weight: 400;
+    text-transform: capitalize;
+    text-indent: 1em;
+    color: rgba(0, 0, 0, 1);
+}
