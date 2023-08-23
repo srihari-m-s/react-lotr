@@ -17,4 +17,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+}
+
+h1{
+  font-family: 'MedievalSharp', cursive;
 }

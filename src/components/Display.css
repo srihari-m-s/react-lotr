@@ -8,21 +8,21 @@
     margin: 0 auto;
     padding: 1rem;
   
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .display-card{
     /* border: 1px solid yellow; */
     width: 90%;
-    padding-inline: 1em;
+    padding-inline: 2em;
 
-    background-color: rgba(225, 173, 109, 0.7);
+    background-color: rgba(225, 173, 109, 0.95);
     color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
@@ -32,4 +32,43 @@
     text-transform: capitalize;
     text-indent: 1em;
     color: rgba(0, 0, 0, 1);
+}
+
+.charInfo{
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-indent: 1em;
+
+    width: 100%;
+    /* overflow: hidden; */
+    color: rgba(0, 0, 0, 1);
+}
+
+.charSearch{
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0.25em 1em;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.charSearch:focus{
+    transition: all 150ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.charLink,
+.charLink:visited{
+    color: black;
+}
+
+.charLink:hover,
+.charLink:active{
+    transition: all 150ms ease-in-out;
+    color: gold;
 }
