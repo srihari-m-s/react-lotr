@@ -18,7 +18,8 @@ To install this application you need [Node JS 16.0 or above](https://nodejs.org/
 # Getting Started
 
 1. First thing is to signup to [the-one-api](https://the-one-api.dev/) to get the unique Access Token. This access token must be sent with each fetch request. Please read documentation for further info. 
-2. Create a .env file in root directory and store the API KEY here.
+2. Create a .env file in root directory and store the API KEY as **VITE_LOTR_API_KEY** here.
+    ``VITE_LOTR_API_KEY = your access token``
 3. Run ``npm run dev`` to start the vite local dev server.
 4. The Application should be up and running. Check it out!
 
