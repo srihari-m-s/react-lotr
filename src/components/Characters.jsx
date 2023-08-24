@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react'
+import LazyListItem from './LazyListItem'
 
 export default function Characters({data}) {
 
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState("");
     
     function filterArray(search){
         if(search === ""){
@@ -16,27 +17,8 @@ export default function Characters({data}) {
 
     let charsData = visibleChars.map((char, index) => {
 
-        return (
-            <div className="display-card" key={`${char["_id"]}`}>
-                
-                <h1 className='t-shadow'>{index+1}. {char.name}</h1>
-                {Object.keys(char).map((key, ind) => {
-                    if(key !== "name" && key !== "_id" && char[key] !== "" && char[key] !== "NaN"){
-
-                        if(key === "wikiUrl"){
-                            return (
-                                <p className='t-shadow charInfo' key={`${key}${ind}`}>{key}: <a href={char[key]} target='_blank' className="charLink" rel="noopener noreferrer">{char[key]}</a></p>
-                            )
-                        } else {
-
-                            return (
-                                <p className='t-shadow charInfo' key={`${key}${ind}`}>{key}: {char[key]}</p>
-                            )
-                        }
-                    }
-                })}
-                
-            </div>
+        return (            
+                <LazyListItem char={char} index={index} key={`${char["_id"]}`}/>            
         )
     })
 

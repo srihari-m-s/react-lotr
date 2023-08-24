@@ -17,9 +17,9 @@
     /* overflow: auto; */
 }
 
-.display-card{
+.display-card {
     /* border: 1px solid yellow; */
-    width: 90%;
+    width: 100%;
     padding-inline: 2em;
 
     background-color: rgba(225, 173, 109, 0.95);
@@ -27,14 +27,31 @@
     border-radius: 10px;
 }
 
-.movieInfo{
+.char-wrapper {
+    width: 100%;
+    background-color: rgba(225, 173, 109, 0.95);
+    border-radius: 10px;
+
+    /* border: 1px solid white */
+}
+
+.lazy-display-card {
+    /* border: 1px solid yellow; */
+    width: 100%;
+
+    background-color: rgba(225, 173, 109, 0.95);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.movieInfo {
     font-weight: 400;
     text-transform: capitalize;
     text-indent: 1em;
     color: rgba(0, 0, 0, 1);
 }
 
-.charInfo{
+.charInfo {
     font-weight: 400;
     font-size: 1.5rem;
     text-transform: capitalize;
@@ -45,7 +62,7 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.charSearch{
+.charSearch {
     width: 80%;
     font-size: 1.5rem;
     padding: 0.25em 1em;
@@ -57,18 +74,18 @@
     color: black;
 }
 
-.charSearch:focus{
+.charSearch:focus {
     transition: all 150ms ease-in-out;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 .charLink,
-.charLink:visited{
+.charLink:visited {
     color: black;
 }
 
 .charLink:hover,
-.charLink:active{
+.charLink:active {
     transition: all 150ms ease-in-out;
     color: gold;
 }

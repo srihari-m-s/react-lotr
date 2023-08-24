@@ -8,6 +8,8 @@ import './Display.css';
 
 export default function Display() {
 
+    const APITOKEN = import.meta.env.VITE_LOTR_API_KEY;
+
     let selection = useSelector((state) => state.selection.selection);
     let fetchURL = "";
 
@@ -24,12 +26,12 @@ export default function Display() {
             return await fetch(fetchURL, {
             headers: {
                 'Accept': 'application/json',
-                'Authorization': 'Bearer IsO8PE03WN7jbz8rsZYp'
+                'Authorization': `Bearer ${APITOKEN}`
             }
             })
             .then(response => response.json())
             .then(data => data)},
-        staleTime: 1000 * 60,
+        staleTime: 1000 * 60 * 5,
     })
 
     const displayComponent = {
