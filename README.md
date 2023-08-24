@@ -9,19 +9,19 @@ The Application has dashboard of a sort that lets users select[Books, Movies or 
 
 To install this application you need [Node JS 16.0 or above](https://nodejs.org/en/download/).
 - Clone repo using git or download the repo files
--- ``git clone https://github.com/srihari-m-s/react-lotr.git``
+    ``git clone https://github.com/srihari-m-s/react-lotr.git``
 
 - Use npm to install dependencies and start local dev server
--- ``npm install``
--- ``npm run dev``
+    ``npm install``
+    ``npm run dev``
 
 # Getting Started
 
 1. First thing is to signup to [the-one-api](https://the-one-api.dev/) to get the unique Access Token. This access token must be sent with each fetch request. Please read documentation for further info. 
 2. Create a .env file in root directory and store the API KEY as **VITE_LOTR_API_KEY** here.
     ``VITE_LOTR_API_KEY = your access token``
-3. Run ``npm run dev`` to start the vite local dev server.
-4. The Application should be up and running. Check it out!
+4. Run ``npm run dev`` to start the vite local dev server.
+5. The Application should be up and running. Check it out!
 
 # Acknowledgements
 
