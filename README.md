@@ -45,4 +45,4 @@ MIT License.
 ![Characters](https://github.com/srihari-m-s/react-lotr/blob/master/images/Characters.jpg?raw=true)
 
 ## 5. Characters - search
-![Characters](https://github.com/srihari-m-s/react-lotr/blob/master/images/Char-seacrh.jpg?raw=true)
+![Characters](https://github.com/srihari-m-s/react-lotr/blob/master/images/Char-search.jpg?raw=true)
